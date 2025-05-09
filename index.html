@@ -25,16 +25,26 @@
         src: url('HelveticaNowDisplay.otf');
         font-feature-settings: "ss04";
         unicode-range: U+0052,U+0052 ;}
-    /**.cover {
+  .cover {
         page: cover;
         position: absolute;
         width: 100%;
         height: 100%;
-        background-image: url('https://source.unsplash.com/random/1600x900') no-repeat center center;
+        background-image: url('cover.jpg') no-repeat center center;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
-        }**/
+        
+        }
+
+        ol{
+            margin-top: 20px;
+            font-family: 'Unbounded', sans-serif;
+            font-weight: 230;
+            font-style: normal;
+            font-optical-sizing: auto;
+            line-height: 1.5;
+        }
 
         body {
             /* display: flex; */
@@ -167,6 +177,7 @@
             font-optical-sizing: auto;
             line-height: 1.5;
         }
+        
 
         a {
             color: #7d7d7d;
@@ -225,6 +236,7 @@
         @page :right {
             margin-right: 1cm;
         }
+
         body {
         width: 297mm;
         height: 210mm;
@@ -244,11 +256,11 @@
         }
         h1 {
         font-size: 4em;
-        line-height: 0.8em;
+        line-height: 1em;
         text-shadow: 0 0 10px #5a5a5a;
         }
         h2 {
-        font-size: 1.5em;
+        font-size: 0.9em;
         }
 
     
@@ -277,19 +289,19 @@
 
 <body> 
     <!-- THIS SECTION IS YOUR COVER PAGE -->
-    <section style="
-    background-image: url(cover.jpg);">
+    <section style="background-image: url(cover.jpg);">
         <div class="parent" >
             <div class="">
                 
-           <!--  <div class="caption">
+           <div class="caption" style="width: 50em; position: absolute;left: 54vw;">
             
-                <a class="caption_url" href="https://karenanndonnachie.github.io/VCA_INTERACTIVEMEDIA/ResearchJournal/researchJournal_template.html">https://karenanndonnachie.github.io/VCA_INTERACTIVEMEDIA/ResearchJournal/researchJournal_template.html</a></div> 
-            </div>-->
+                <a class="caption_url" style="color: rgb(55, 55, 55);" href="https://github.com/SongIIII0P/researchJournal.git">https://github.com/SongIIII0P/researchJournal.git</a></div>
+                 
+            </div>
             </div>
         <div class="right" style="background: none;color:white">
             <div background-color: white;>
-            <h1 style="line-height: 1;font-size: 5em;">InTerACTIVE!ME DIA—Re!SEARCH JOUR NAL, 2024 {WWWAYPOSTS}</h1>
+            <h1 style="line-height: 1;font-size: 4em;">InTerACTIVE!ME DIA—Re!SEARCH JOUR NAL, 2024 {WWWAYPOSTS}</h1>
             <h2 style="text-shadow: 0 0 5px #444444; padding-left: 10px;"> Songi Park # 1370318 | GDES30008 Class 3 </h2>
             <ol style="text-shadow: 0 0 3px #444444; padding-left: 45px;">
                 <li>Desire of Codes</li>
@@ -312,7 +324,7 @@
                 <li>We Feel Fine</li>
                 <li>Ototo</li>
             </ol>
-            <div id="link"> <a href="https://github.com/SongIIII0P/ResearchJournal.git">https://github.com/SongIIII0P/ResearchJournal.git</a></div>
+            <!--<div id="link"> <a href="https://github.com/SongIIII0P/ResearchJournal.git">https://github.com/SongIIII0P/ResearchJournal.git</a></div>-->
         </div>
         </div>
     </section>
