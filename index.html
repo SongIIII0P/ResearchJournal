@@ -201,6 +201,8 @@
             margin-top: 6em;
             margin-left: 25px;
         }
+
+
         @media (max-width: 600px) {
             *{            
             margin: 0;
@@ -212,6 +214,8 @@
         }
 
     @media print {
+        
+    
         @page {
             size: A4 landscape;
             margin:1cm;
@@ -222,13 +226,15 @@
   }
          }
          @page cover {
-  margin: 0; /* Use a full size page */
+            margin: 0; /* Use a full size page */
 
   /* Remove page numbers for the cover */
-  @bottom-center {
-    content: none;
-  }
-}
+ 
+            @bottom-center {
+                content: none;
+            }
+        }
+
         @page :left {
             margin-left: 1cm;
         }
@@ -244,9 +250,11 @@
         padding: 0;
         page-break-after: always;  
         font-size: 10pt;}
+
         em {
         text-align: left;
         }
+
         section {
             min-height: calc(100% - 2cm);
             height: 100vh;
@@ -254,13 +262,29 @@
             page-break-inside: avoid;
             page-break-after: always !important;
         }
+
         h1 {
         font-size: 4em;
         line-height: 1em;
-        text-shadow: 0 0 10px #5a5a5a;
+        filter: drop-shadow(0px 0px 10px #7a7a7a);
+        -webkit-filter: drop-shadow(0px 0px 10px #7a7a7a);
         }
-        h2 {
+
+        h2{
+            font-size: 0.9em;
+        }
+
+        .cover01 h2 {
         font-size: 0.9em;
+        filter: drop-shadow(0px 0px 10px #494949);
+        -webkit-filter: drop-shadow(0px 0px 10px #494949);
+        }
+
+        li {
+            text-shadow: 0 0 5px #444444;
+            filter: drop-shadow(0px 0px 10px #494949);
+        -webkit-filter: drop-shadow(0px 0px 10px #494949);
+
         }
 
     
@@ -272,6 +296,7 @@
             line-height: 3em;
             width: 100%;
         }
+        
     }
 
     caption_url {
@@ -284,12 +309,16 @@
         width:80%;
         text-align: left;
     }
+
+    
+
+    
     </style>
 </head>
 
 <body> 
     <!-- THIS SECTION IS YOUR COVER PAGE -->
-    <section style="background-image: url(cover.jpg);">
+    <section  class="cover01" style="background-image: url(cover.jpg);">
         <div class="parent" >
             <div class="">
                 
